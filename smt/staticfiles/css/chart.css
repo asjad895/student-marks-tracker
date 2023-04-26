@@ -1,0 +1,58 @@
+#line-chart {
+    width: 70%;
+    height: 500px;
+    border: 1px solid black;
+    margin: 20px auto;
+  }
+  body{
+    align-content: center;
+    align-items: center;
+    background-color: rgb(57, 86, 142);
+  }
+  .drop{
+    text-align: center;
+    align-items: center;
+  }
+
+  
+  .chart-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .x-axis-label, .y-axis-label {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .legend-label {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .chart-line-1 {
+    stroke: #8C1D40;
+    stroke-width: 3;
+    stroke-dasharray: 5 5;
+  }
+  
+  .chart-line-2 {
+    stroke: #33658A;
+    stroke-width: 3;
+    stroke-dasharray: 5 5;
+  }
+  
+  .chart-line-3 {
+    stroke: #F6AE2D;
+    stroke-width: 3;
+    stroke-dasharray: 5 5;
+  }
+  
+  .chart-line-4 {
+    stroke: #F26419;
+    stroke-width: 3;
+    stroke-dasharray: 5 5;
+  }
+  
+  
