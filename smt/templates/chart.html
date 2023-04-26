@@ -1,0 +1,93 @@
+{%load static%}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Marks Chart</title>
+    <link rel="stylesheet" href="{% static 'css/chart.css' %}">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+<style>
+  body{
+    align-content: center;
+    align-items: center;
+    background-color: #e9f9ff00;
+  }
+  .drop{
+    text-align: center;
+    align-items: center;
+  }
+  .in{
+    text-align: center;
+    font-size: large;
+    box-sizing: border-box;
+    border-radius: 10px;
+  }
+/* Styling for the dropdown menu */
+.in select {
+  width: 200px;
+  height: 40px;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  border: none;
+  background: #02102d; /* Custom color */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* Styling for the options */
+.in select option {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+  background: #fff;
+}
+canvas {
+  height: 70vh;
+} 
+
+/* Styling for the selected option */
+.in select option:checked {
+  background: #3b5998; /* Custom color */
+  color: #fff;
+}
+.chart{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background-color: hsla(244, 41%, 29%, 0.381);
+}
+.banner{
+  background-color: #3b5998;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding-bottom: 20px;
+}
+
+  
+</style>
+<body>
+  <div class="banner">
+    <h1 style="text-align: center ;"> Student Marks Chart</h1>
+    <div class="in">
+      <select  class="drop" id="subject">
+        <option value="">Select subject</option>
+        <option value="Chemistry">Chemistry</option>
+        <option value="Physics">Physics</option>
+        <option value="Biology">Biology</option>
+        <option value="Total">Total</option>
+      </select> 
+    </div>
+  </div>
+  <div class="chart">
+    <canvas id="myChart"></canvas>
+  </div>
+  <script src="{% static 'js/chart.js' %}"></script>
+</body>
+</html>
