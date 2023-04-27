@@ -6,12 +6,12 @@ import os
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = os.environ.get('SECRET_KEY', 'django-insecure-%nt743@&==&f14izgtt33btlij&nq40&%2y&&te=w4m0vr%tbj')
+SECRET_KEY = 'django-insecure-%nt743@&==&f14izgtt33btlij&nq40&%2y&&te=w4m0vr%tbj'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['*']
+ALLOWED_HOSTS = []
 
 
 # Application definition
