@@ -119,6 +119,9 @@ USE_TZ = True
 
 # STATIC_URL = "static/"
 
+# The URL to use when referring to static files (where they will be served from)
+STATIC_URL = '/static/'
+
 STATIC_URL = "/static/"
 # STATIC_ROOT = "/var/www/dropbox.com/home/Projects/static/"
 STATICFILES_DIRS = [ os.path.join(BASE_DIR, 'static/')]
