@@ -1,10 +1,11 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #e4c7c7;
+    background-color: #87b6ed52;
 }
 
 h1 {
     text-align: center;
+    color: #0a0f17;
 }
 .form-grid {
     display: grid;
@@ -20,13 +21,16 @@ form {
     padding: 20px;
     margin: 20px auto;
     max-width:fit-content;
+    box-sizing: border-box;
+    border-radius: 5px;
+    box-shadow: #082b60;
 }
 
 label {
     display: block;
     font-weight: bold;
     margin-bottom: 5px;
-    background-color: #3e8e41;
+    background-color: #0958d59f;
 }
 
 input[type="date"],
@@ -40,7 +44,7 @@ input[type="number"] {
 }
 
 button[type="submit"],a {
-    background-color: #4CAF50;
+    background-color: #01142b;
     color: hsl(0, 50%, 4%);
     padding: 10px 20px;
     border: none;
@@ -50,16 +54,17 @@ button[type="submit"],a {
 }
 
 button[type="submit"],a:hover {
-    background-color: #3e8e41;
+    background-color: #041d39;
 }
 .button1 {
     display: inline-block;
-    background-color: #4CAF50;
-    color: #0b0404;
+    background-color: #05103e;
+    color: #416a08;
     padding: 10px 20px;
+    margin-left: 240px;
     text-align: center;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;

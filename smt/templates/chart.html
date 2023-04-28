@@ -69,11 +69,24 @@ canvas {
   border-radius: 5px;
   padding-bottom: 20px;
 }
+.button1 {
+  display: inline-block;
+  background-color: #02203e;
+  color: #5f650d;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
 
   
 </style>
 <body>
   <div class="banner">
+    <a href="{% url 'home' %}" class="button1">Update Marks:Home</a>
     <h1 style="text-align: center ;"> Student Marks Chart</h1>
     <div class="in">
       <select  class="drop" id="subject">
