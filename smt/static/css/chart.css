@@ -1,58 +1,119 @@
-#line-chart {
-    width: 70%;
-    height: 500px;
-    border: 1px solid black;
-    margin: 20px auto;
-  }
-  body{
+
+body{
+  align-content: center;
+  align-items: center;
+  background-color: #e9f9ff00;
+}
+.drop{
+  text-align: center;
+  align-items: center;
+}
+.in{
+  text-align: center;
+  font-size: large;
+  box-sizing: border-box;
+  border-radius: 10px;
+}
+/* Styling for the dropdown menu */
+.in select {
+width: 200px;
+height: 40px;
+padding: 10px;
+font-size: 16px;
+font-weight: bold;
+color: #fff;
+border: none;
+background: #02102d; /* Custom color */
+-webkit-appearance: none;
+-moz-appearance: none;
+appearance: none;
+}
+
+/* Styling for the options */
+.in select option {
+font-size: 16px;
+font-weight: bold;
+color: #000;
+background: #fff;
+}
+canvas {
+height: 70vh;
+} 
+
+/* Styling for the selected option */
+.in select option:checked {
+background: #3b5998; /* Custom color */
+color: #fff;
+}
+.chart{
+margin-top: 10px;
+margin-bottom: 10px;
+border-radius: 10px;
+box-sizing: border-box;
+background-color: hsla(244, 41%, 29%, 0.381);
+}
+.banner{
+background-color: #3b5998;
+box-sizing: border-box;
+border-radius: 5px;
+padding-bottom: 20px;
+}
+body{
     align-content: center;
     align-items: center;
-    background-color: rgb(57, 86, 142);
+    background-color: #e9f9ff00;
   }
   .drop{
     text-align: center;
     align-items: center;
   }
+  .in{
+    text-align: center;
+    font-size: large;
+    box-sizing: border-box;
+    border-radius: 10px;
+  }
+/* Styling for the dropdown menu */
+.in select {
+  width: 200px;
+  height: 40px;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  border: none;
+  background: #02102d; /* Custom color */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
 
-  
-  .chart-title {
-    font-size: 24px;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-  
-  .x-axis-label, .y-axis-label {
-    font-size: 14px;
-    font-weight: bold;
-  }
-  
-  .legend-label {
-    font-size: 14px;
-    font-weight: bold;
-  }
-  
-  .chart-line-1 {
-    stroke: #8C1D40;
-    stroke-width: 3;
-    stroke-dasharray: 5 5;
-  }
-  
-  .chart-line-2 {
-    stroke: #33658A;
-    stroke-width: 3;
-    stroke-dasharray: 5 5;
-  }
-  
-  .chart-line-3 {
-    stroke: #F6AE2D;
-    stroke-width: 3;
-    stroke-dasharray: 5 5;
-  }
-  
-  .chart-line-4 {
-    stroke: #F26419;
-    stroke-width: 3;
-    stroke-dasharray: 5 5;
-  }
-  
-  
+/* Styling for the options */
+.in select option {
+  font-size: 16px;
+  font-weight: bold;
+  color: #000;
+  background: #fff;
+}
+canvas {
+  height: 70vh;
+} 
+
+/* Styling for the selected option */
+.in select option:checked {
+  background: #3b5998; /* Custom color */
+  color: #fff;
+}
+.chart{
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  background-color: hsla(244, 41%, 29%, 0.381);
+}
+.banner{
+  background-color: #3b5998;
+  box-sizing: border-box;
+  border-radius: 5px;
+  padding-bottom: 20px;
+}
