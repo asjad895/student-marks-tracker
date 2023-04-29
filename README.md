@@ -14,11 +14,11 @@ Chart.js
 ## Views
 The project includes several views, which are defined in the views.py file. Here's a brief description of what each view does:
 
-. home(request): Renders the home page of the web application. This view is associated with the URL ''.
+.home(request): Renders the home page of the web application. This view is associated with the URL ''.
 
-. update_marks(request): Handles the updating of student marks data in the backend. This view is associated with the URL '/api/update-marks/'.
+.update_marks(request): Handles the updating of student marks data in the backend. This view is associated with the URL '/api/update-marks/'.
 
-. chart(request): Renders a page that displays a chart of student marks data. This view is associated with the URL '/api/chart/'.
+.chart(request): Renders a page that displays a chart of student marks data. This view is associated with the URL '/api/chart/'.
 
 . marks(request, subject=None): Renders a page that displays a table of student marks data. If a subject is provided in the URL (e.g., '/api/marks/physics/'), the table will only display marks data for that subject. If no subject is provided, the table will display marks data for all subjects. This view is associated with the URL '/api/marks/'.
 
@@ -89,3 +89,9 @@ The page contains an HTML structure with a banner, a drop-down menu to select th
 The JavaScript code includes a function called createChart that takes two parameters, type and data, to create a chart using the Chart.js library. The function first destroys any existing chart to avoid conflicts and then creates a new chart using the specified type and data. The chart options include scales for the x and y axes and a title with the subject name.
 
 The updateChart function is used to fetch data from the API endpoint based on the selected subject and update the chart accordingly. The function uses a conditional statement to check the value of the subject and fetches the corresponding data using the fetch() method. The fetched data is then used to create a new chart using the createChart function.
+
+###DEMO:
+
+[smt.webm](https://user-images.githubusercontent.com/109430048/235299744-3fa99e99-529c-4155-9e7c-a4a55ed4aae1.webm)
+
+
